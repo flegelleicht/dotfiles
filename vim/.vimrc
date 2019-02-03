@@ -36,11 +36,11 @@ set shiftwidth=2
 
 set guicursor=a:blinkon0
 "set guifont=Menlo\ Regular:h12
-set guifont=Ubuntu\ Mono:h18
+set guifont=Fira\ Code:h14
 set guioptions=egmrLt
 
 set encoding=utf-8
-set scrolloff=3
+set scrolloff=5
 "set autoindent
 set showmode
 set showcmd
