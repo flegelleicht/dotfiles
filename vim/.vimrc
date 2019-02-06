@@ -103,3 +103,9 @@ color spacegray "desert "clouds_midnight
 set splitbelow
 set splitright
 
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = 'find %s -type f'
+
+set tags=./.git/tags
+set notagrelative
+
