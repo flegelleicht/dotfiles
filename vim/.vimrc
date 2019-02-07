@@ -17,6 +17,8 @@ Plugin 'kiddos/malokai.vim'
 Plugin 'wolf-dog/nighted.vim'
 Plugin 'fenetikm/falcon'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'nightsense/cosmic_latte'
+Plugin 'DrXVII/vim_colors'
 call vundle#end()
 filetype plugin indent on
 
