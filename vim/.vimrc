@@ -34,11 +34,11 @@ set modelines=0
 set tabstop=2
 set shiftwidth=2
 "set softtabstop=4
-"set expandtab
+set expandtab
 
 set guicursor=a:blinkon0
 "set guifont=Menlo\ Regular:h12
-set guifont=Fira\ Code:h14
+set guifont=Fira\ Code:h10
 set guioptions=egmrLt
 
 set encoding=utf-8
@@ -71,8 +71,8 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+"nnoremap <tab> %
+"vnoremap <tab> %
 
 set wrap
 set textwidth=79
@@ -92,7 +92,12 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <silent> ª <C-w>10<
+nnoremap <silent> º <C-W>10-
+nnoremap <silent> ∆ <C-W>10+
+nnoremap <silent> @ <C-w>10>
 nnoremap <F5> :UndotreeToggle<CR>
+nnoremap <F6> :TagbarToggle<CR>
 
 "nnoremap <S-C-h> :tabp<cr>
 "nnoremap <S-C-l> :tabn<cr>
@@ -109,4 +114,5 @@ let g:ctrlp_user_command = 'find %s -type f'
 
 set tags=./.git/tags
 set notagrelative
+set directory=~/.vim/swapfiles//
 
