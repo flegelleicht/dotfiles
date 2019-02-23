@@ -59,7 +59,7 @@ set laststatus=2
 "set relativenumber
 set number
 set undofile
-set undodir=~/.vimundo
+set undodir=~/.vim/undofiles//
 
 let mapleader = ","
 
@@ -104,8 +104,10 @@ nnoremap <F6> :TagbarToggle<CR>
 "nnoremap <S-C-l> :tabn<cr>
 nnoremap <S-Left> :tabp<cr>
 nnoremap <S-Right> :tabn<cr>
+nnoremap <leader><Left> :tabp<cr>
+nnoremap <leader><Right> :tabn<cr>
 
-color spacegray "desert "clouds_midnight
+color malokai "spacegray "desert "clouds_midnight
 
 set splitbelow
 set splitright
