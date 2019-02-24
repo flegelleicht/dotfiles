@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'auto-pairs-gentle'
+Plugin 'junegunn/rainbow_parentheses.vim'
 
 Plugin 'ajh17/spacegray.vim'
 Plugin 'kiddos/malokai.vim'
