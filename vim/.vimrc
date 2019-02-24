@@ -12,6 +12,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
 Plugin 'kshenoy/vim-signature'
+Plugin 'auto-pairs-gentle'
 
 Plugin 'ajh17/spacegray.vim'
 Plugin 'kiddos/malokai.vim'
@@ -114,6 +115,7 @@ set splitright
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = 'find %s -type f'
+let g:AutoPairsUseInsertedCount = 1
 
 set tags=./.git/tags
 set notagrelative
