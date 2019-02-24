@@ -101,6 +101,7 @@ nnoremap <silent> ∆ <C-W>10+
 nnoremap <silent> @ <C-w>10>
 nnoremap <F5> :UndotreeToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
+nnoremap <F7> :let r=system("pbcopy", getline("."))<CR>
 
 "nnoremap <S-C-h> :tabp<cr>
 "nnoremap <S-C-l> :tabn<cr>
