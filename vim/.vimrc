@@ -59,7 +59,7 @@ set laststatus=2
 "set relativenumber
 set number
 set undofile
-set undodir=~/.vimundo
+set undodir=~/.vim/undofiles
 
 let mapleader = ","
 
