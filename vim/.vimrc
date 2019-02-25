@@ -22,6 +22,10 @@ Plugin 'fenetikm/falcon'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nightsense/cosmic_latte'
 Plugin 'DrXVII/vim_colors'
+Plugin 'andreypopp/vim-colors-plain'
+Plugin 'nightsense/snow'
+Plugin 'treycucco/vim-monotonic'
+Plugin 'bogado/file-line'
 call vundle#end()
 filetype plugin indent on
 
@@ -95,10 +99,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <silent> ª <C-w>10<
-nnoremap <silent> º <C-W>10-
-nnoremap <silent> ∆ <C-W>10+
-nnoremap <silent> @ <C-w>10>
+nnoremap <silent> ª <C-w>5<
+nnoremap <silent> º <C-W>5-
+nnoremap <silent> ∆ <C-W>5+
+nnoremap <silent> @ <C-w>5>
 nnoremap <F5> :UndotreeToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
 nnoremap <F7> :let r=system("pbcopy", getline("."))<CR>
