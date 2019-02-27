@@ -1,3 +1,6 @@
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" mkdir -p ~/.vim/undofiles
+" mkdir -p ~/.vim/swapfiles
 " Vundle settings
 set nocompatible
 filetype off
@@ -14,11 +17,13 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'auto-pairs-gentle'
 Plugin 'junegunn/rainbow_parentheses.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'ajh17/spacegray.vim'
 Plugin 'kiddos/malokai.vim'
 Plugin 'wolf-dog/nighted.vim'
-Plugin 'fenetikm/falcon'
+"Plugin 'fenetikm/falcon'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nightsense/cosmic_latte'
 Plugin 'DrXVII/vim_colors'
@@ -114,7 +119,7 @@ nnoremap <S-Right> :tabn<cr>
 nnoremap <leader><Left> :tabp<cr>
 nnoremap <leader><Right> :tabn<cr>
 
-color malokai "spacegray "desert "clouds_midnight
+colorscheme malokai "spacegray "desert "clouds_midnight
 
 set splitbelow
 set splitright
