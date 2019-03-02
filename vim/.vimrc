@@ -132,3 +132,4 @@ set tags=./.git/tags
 set notagrelative
 set directory=~/.vim/swapfiles//
 
+set rtp+=/usr/local/opt/fzf
