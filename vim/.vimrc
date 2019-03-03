@@ -31,6 +31,9 @@ Plugin 'andreypopp/vim-colors-plain'
 Plugin 'nightsense/snow'
 Plugin 'treycucco/vim-monotonic'
 Plugin 'bogado/file-line'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'morhetz/gruvbox'
+Plugin 'schickele/vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -92,7 +95,7 @@ set formatoptions=qrn1
 "set colorcolumn=85
 
 "set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,space:•
 
 nnoremap j gj
 nnoremap k gk
