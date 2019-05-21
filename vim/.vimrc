@@ -19,6 +19,8 @@ Plugin 'auto-pairs-gentle'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'mileszs/ack.vim'
 
 Plugin 'ajh17/spacegray.vim'
 Plugin 'kiddos/malokai.vim'
@@ -33,7 +35,10 @@ Plugin 'treycucco/vim-monotonic'
 Plugin 'bogado/file-line'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'morhetz/gruvbox'
-Plugin 'schickele/vim'
+Plugin 'schickele/vim' "fruchtig
+Plugin 'bawigga/vim-neopro'
+Plugin 'schickele/vim-nachtleben'
+Plugin 'abnt713/vim-hashpunk'
 call vundle#end()
 filetype plugin indent on
 
@@ -122,7 +127,7 @@ nnoremap <S-Right> :tabn<cr>
 nnoremap <leader><Left> :tabp<cr>
 nnoremap <leader><Right> :tabn<cr>
 
-colorscheme malokai "spacegray "desert "clouds_midnight
+colorscheme neopro "malokai "spacegray "desert "clouds_midnight
 
 set splitbelow
 set splitright
@@ -130,9 +135,25 @@ set splitright
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = 'find %s -type f'
 let g:AutoPairsUseInsertedCount = 1
+let g:vimrubocop_config = '/Users/ehebisch/Projects/ausbildung.de/.rubocop.yml'
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 set tags=./.git/tags
 set notagrelative
 set directory=~/.vim/swapfiles//
 
 set rtp+=/usr/local/opt/fzf
+set background=light
+if &term =~ '256color'
+  set t_ut=
+endif
+
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+augroup END
+
