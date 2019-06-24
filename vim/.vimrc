@@ -39,6 +39,7 @@ Plugin 'schickele/vim' "fruchtig
 Plugin 'bawigga/vim-neopro'
 Plugin 'schickele/vim-nachtleben'
 Plugin 'abnt713/vim-hashpunk'
+Plugin 'dracula/vim', { 'name': 'dracula-theme' }
 call vundle#end()
 filetype plugin indent on
 
